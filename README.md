@@ -4,8 +4,10 @@ A movie-focused subtitle translation system using Claude Code for intelligent co
 
 ## Quick Start
 
-### Fully Automated Workflow (Recommended)
+### Fully Automated Workflow
 ```bash
+# 0. Install Claude Code and make sure it works
+
 # 1. Setup movie
 mkdir movies/Your_Movie_Name
 cp your_subtitles.srt movies/Your_Movie_Name/Your_Movie_Name_EN.srt
@@ -22,9 +24,6 @@ python tools/translate_batch.py movies/Your_Movie_Name translate
 # 5. Assemble final Romanian subtitles
 python tools/reassemble_translation.py movies/Your_Movie_Name assemble
 ```
-
-### Manual Workflow
-See `docs/TRANSLATION_WORKFLOW.md` for step-by-step manual process.
 
 ## Features
 
